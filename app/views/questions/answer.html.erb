@@ -1,0 +1,23 @@
+<div class="container-sm p-3">
+  <h1>Stupid Coaching</h1>
+
+    <div class="container py-3 h-100">
+          <figure class="bg-white p-3 rounded" style="border-left: .25rem solid #7F8487;">
+            <blockquote class="blockquote pb-2">
+              <p class=""><%= params[:answer] %></p>
+            </blockquote>
+            <figcaption class="blockquote-footer mb-0 font-italic">
+              <em>You</em>
+            </figcaption>
+          </figure>
+          <figure class="bg-light text-dark p-3 rounded" style="border-left: .25rem solid #7F8487;">
+            <blockquote class="blockquote pb-2">
+              <p class=""><%=@response %></p>
+            </blockquote>
+            <figcaption class="blockquote-footer mb-0 font-italic">
+              <em>Your coach</em>
+            </figcaption>
+          </figure>
+    </div>
+  <%= link_to "Ask another question", ask_path %>
+</div>
